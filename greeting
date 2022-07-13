@@ -1,0 +1,12 @@
+#!/usr/bin/env python3
+
+from random import choice
+from colorama import Fore
+
+
+fw = ["Hello", "Hi", "Hey", "Welcome", "What's up"]
+sw = ["User", "Friend", "Fortran", "Cool Guy", "World", "ProfMYK"]
+
+ms = f"{choice(list(vars(Fore).values()))}{choice(fw)}, {choice(list(vars(Fore).values()))}{choice(sw)}! {Fore.RESET}\n"
+
+print(ms)
